@@ -1,0 +1,258 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/trianglify-lowres.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta{
+    background: #FFFFFA;
+    margin: 40px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* slider banner*/
+
+.slider-banner{
+    overflow: hidden;
+    z-index: 1000;
+    position: relative;
+}
+
+.slider-banner .banner{
+    position: relative;
+    width: 100%;
+}
+
+.slider-banner .banner img{
+    vertical-align: top;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+}
+
+.slider-banner .flecha-banner{
+    font-size: 35px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.308);
+    transition: ease color .3s;
+    position: absolute;
+    top: 50%;
+    z-index: 1100;
+}
+
+.slider-banner .flecha-banner:hover{
+    color: rgba(0, 0, 0, 0.5);
+    transition: ease color .2s;
+}
+
+.slider-banner .anterior{
+    left: 20px;
+}
+
+.slider-banner .siguiente{
+    right: 20px;
+}
+
+
+/* slider info */
+
+.slider-info{
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0;
+    z-index: 1000;
+    position: relative;
+}
+
+/* seccion informacion */
+
+.slider-info .informacion{
+    width: 100%;
+}
+
+.slider-info .informacion article{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-info .informacion article .slide{
+    background: #FFFFFA;
+    width: 100%;
+    left: 100%;
+    padding: 20px 80px;
+    position: absolute;
+}
+
+.slider-info .flecha-info{
+    font-size: 35px;
+    line-height: 35px;
+    color: #9b9b9b93;
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    
+}
+
+.slider-info .flecha-info:hover{
+    color: #00A896;
+}
+
+.slider-info .anterior{
+    left: 20px;
+}
+
+.slider-info .siguiente{
+    right: 20px;
+}
+
+/* estilos para los slides de info */
+
+.slider-info .informacion .nombre{
+    color: #40454f;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 16px;
+}
+
+.slider-info .informacion .trabajo{
+    color: #02c39a;
+    font-size:  18px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 16px;
+}
+
+.slider-info .informacion .pais{
+    color: #2a2d34;
+    font-size:  14px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.slider-info .informacion .pais img{
+    position: relative;
+    top: 3px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+.slider-info .informacion .subtitulo{
+    color: #40454f;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.slider-info .informacion .texto{
+    color: #00A896;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* botones slider info */
+.slider-info .botones{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.slider-info .botones span{
+    width: 14px;
+    background: #9b9b9b93;
+    height: 14px;
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.slider-info .botones .active{
+    background: #00A896;
+
+}
+
+
+/* redes sociales*/
+
+.redes-sociales{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.redes-sociales a{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 10px 0;
+    color: #9b9b9b93;
+    transition: ease color .3s;
+}
+
+.redes-sociales .instagram:hover{
+    color: #d6249f;
+    transition: ease color .3s;
+}
+
+.redes-sociales .github:hover{
+    color: #2a2d34;
+    transition: ease color .3s;
+}
+
+.redes-sociales .facebook:hover{
+    color: #3b5998;
+    transition: ease color .3s;
+}
+
+.boton-portafolio{
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.boton-portafolio a{
+    font-size: 18px;
+    line-height: 18px;
+    padding: 20px;
+    color: #00A896;
+    
+
+}
